@@ -3,7 +3,7 @@ const cors = require("cors");
 const pdf = require('html-pdf');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -15,16 +15,29 @@ app.get("/", function(req, res){
     <html>
     <head>
     <title>Page Title</title>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+    }
+    div.page-break{
+        page-break-after: always;
+    }
+    </style>
     </head>
     <body>
 
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <div>This is a Heading</div>
+    <div class="page-break"></div>
+    <div>This is a paragraph.</div>
 
     </body>
     </html>
     `;
-    let options = { format: 'Letter', orientation: 'portrait' };
+    let options = { 
+        format: 'Letter', 
+        orientation: 'portrait'
+    };
 
     pdf.create(html, options).toBuffer(function(err, buffer){
         res.json({message: "Success", result: buffer.toString('base64')})
