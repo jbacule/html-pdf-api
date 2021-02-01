@@ -17,7 +17,7 @@ app.get("/", function(req, res){
     <title>Page Title</title>
     <style>
     *{
-        font-family: 'Heebo', sans-serif; 
+        font-family: 'Arial', sans-serif; 
         font-weight:600;
     }
     body{
