@@ -16,8 +16,9 @@ app.get("/", function(req, res){
     <head>
     <title>Page Title</title>
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Potta+One&family=Roboto&display=swap');
     div.arial{
-        font-family: 'Arial', sans-serif; 
+        font-family: 'Potta One', cursive;
         font-weight:600;
     }
     div.roboto{
