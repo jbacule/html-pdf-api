@@ -16,8 +16,16 @@ app.get("/", function(req, res){
     <head>
     <title>Page Title</title>
     <style>
-    *{
+    div.arial{
         font-family: 'Arial', sans-serif; 
+        font-weight:600;
+    }
+    div.roboto{
+        font-family: 'Roboto', sans-serif; 
+        font-weight:600;
+    }
+    div.heebo{
+        font-family: 'Heebo', sans-serif; 
         font-weight:600;
     }
     body{
@@ -33,7 +41,9 @@ app.get("/", function(req, res){
     </style>
     </head>
     <body>
-    <div>This is a Heading</div>
+    <div class="arial">This is a Arial</div>
+    <div class="roboto">This is a Roboto</div>
+    <div class="heebo">This is a Heebo</div>
     <div class="page-break"></div>
     <div>This is a paragraph.</div>
 
