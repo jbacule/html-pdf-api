@@ -16,7 +16,7 @@ app.get("/", function(req, res){
     <head>
     <title>Page Title</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Potta+One&family=Roboto&family=Coda+Caption:wght@800&family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Potta+One&family=Roboto&family=Coda+Caption:wght@800&family=Lobster&display=swap');
     div.arial{
         font-family: 'Potta One', cursive;
         font-weight:600;
@@ -27,7 +27,7 @@ app.get("/", function(req, res){
     }
     div.heebo{
         font-family: 'Heebo', sans-serif; 
-        font-weight:600;
+        font-weight:900;
     }
     div.coda{
         font-family: 'Coda Caption', sans-serif;
