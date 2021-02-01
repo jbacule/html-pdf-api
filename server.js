@@ -16,7 +16,7 @@ app.get("/", function(req, res){
     <head>
     <title>Page Title</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Potta+One&family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Potta+One&family=Roboto&family=Coda+Caption:wght@800&family=Lobster&display=swap');
     div.arial{
         font-family: 'Potta One', cursive;
         font-weight:600;
@@ -27,6 +27,14 @@ app.get("/", function(req, res){
     }
     div.heebo{
         font-family: 'Heebo', sans-serif; 
+        font-weight:600;
+    }
+    div.coda{
+        font-family: 'Coda Caption', sans-serif;
+        font-weight:600;
+    }
+    div.lobster{
+        font-family: 'Lobster', cursive;
         font-weight:600;
     }
     body{
@@ -44,6 +52,8 @@ app.get("/", function(req, res){
     <body>
     <div class="arial">This is a Arial</div>
     <div class="roboto">This is a Roboto</div>
+    <div class="coda">This is a Coda Caption</div>
+    <div class="lobster">This is a Lobster</div>
     <div class="heebo">This is a Heebo</div>
     <div class="page-break"></div>
     <div>This is a paragraph.</div>
