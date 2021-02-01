@@ -16,8 +16,15 @@ app.get("/", function(req, res){
     <head>
     <title>Page Title</title>
     <style>
+    *{
+        font-family: 'Heebo', sans-serif; 
+        font-weight:600;
+    }
     body{
+        
         margin:0;
+        margin-left: 5px;
+        margin-top: 0px;
         padding:0;
     }
     div.page-break{
@@ -26,7 +33,6 @@ app.get("/", function(req, res){
     </style>
     </head>
     <body>
-
     <div>This is a Heading</div>
     <div class="page-break"></div>
     <div>This is a paragraph.</div>
